@@ -25,17 +25,12 @@
   <!-- Excludes all 'module-info.java' files              -->
   <!-- See https://checkstyle.org/config_filefilters.html -->
   <module name="BeforeExecutionExclusionFileFilter">
-    <property name="fileNamePattern” value=“module\-info\.java$|src[\\/]test[\\/]java[\\/].*"/>
+    <property name="fileNamePattern" value="module\-info\.java$"/>
   </module>
   <!-- https://checkstyle.org/config_filters.html#SuppressionFilter -->
-<!--  <module name="SuppressionFilter">-->
-<!--    <property name="file" value="${org.checkstyle.google.suppressionfilter.config}"-->
-<!--           default="checkstyle-suppressions.xml" />-->
-<!--    <property name="optional" value="true"/>-->
-<!--  </module>-->
   <module name="SuppressionFilter">
     <property name="file" value="https://raw.githubusercontent.com/wen-ys/lguplus-open-reference/main/suppressions.xml"/>
-    <property name="optional" value="true"/>
+    <property name="optional" value="false"/>
   </module>
 
   <!-- Checks for whitespace                               -->
