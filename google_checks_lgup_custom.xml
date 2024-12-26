@@ -30,7 +30,7 @@
   <!-- https://checkstyle.org/config_filters.html#SuppressionFilter -->
   <module name="SuppressionFilter">
     <property name="file" value="https://raw.githubusercontent.com/wen-ys/lguplus-open-reference/main/suppressions.xml"/>
-    <property name="optional" value="false"/>
+    <property name="optional" value="true"/>
   </module>
 
   <!-- Checks for whitespace                               -->
